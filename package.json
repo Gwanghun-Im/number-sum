@@ -4,7 +4,7 @@
   "description": "Calculate the sum of numbers in selected text",
   "version": "0.0.1",
   "publisher": "Gwanghun-Im",
-  "private": true,
+  "private": false,
   "license": "MIT",
   "repository": {
     "type": "git",
