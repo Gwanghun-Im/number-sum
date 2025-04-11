@@ -4,6 +4,8 @@ A VS Code extension that calculates the sum of numbers in selected text.
 
 ![Number Sum Icon](images/icon.png)
 
+![autoCalaculate](images/autoCalaculate.gif)
+
 ## Features
 
 - Calculate the sum of numbers in selected text
