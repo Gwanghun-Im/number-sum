@@ -2,7 +2,7 @@
   "name": "number-sum",
   "displayName": "Number Sum",
   "description": "Calculate the sum of numbers in selected text",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "Gwanghun-Im",
   "private": false,
   "license": "MIT",
@@ -29,7 +29,9 @@
     "color": "#C80000",
     "theme": "dark"
   },
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [

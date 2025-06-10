@@ -1,16 +1,14 @@
 # Number Sum
 
-A VS Code extension that calculates the sum of numbers in selected text.
+A VS Code extension that automatically calculates the sum of numbers in selected text.
 
 ![Number Sum Icon](images/icon.png)
 
-![autoCalaculate](images/autoCalaculate.gif)
-
 ## Features
 
-- Calculate the sum of numbers in selected text
-- Auto-calculate feature that updates the sum every 3 seconds when text is selected
-- Toggle auto-calculate feature on/off
+- Automatically calculates the sum of numbers in selected text
+- Updates every 3 seconds when text is selected
+- Toggle auto-calculate feature with a single click
 - Supports:
   - Line-by-line number separation
   - Ignores thousand separators (,)
@@ -20,19 +18,20 @@ A VS Code extension that calculates the sum of numbers in selected text.
 
 1. Select text containing numbers
 2. The sum will be automatically calculated and displayed in the status bar
-3. If auto-calculate is disabled, use the command palette (Cmd+Shift+P) and type "Calculate Number Sum"
-4. Toggle auto-calculate feature using the command palette and typing "Toggle Auto Calculate"
-
-## Settings
-
-- `numberSum.autoCalculate`: Enable/disable automatic calculation of number sums (default: true)
+3. Click the "Auto" status bar item to toggle auto-calculate feature
+4. If auto-calculate is disabled, use the command palette (Cmd+Shift+P) and type "Calculate Number Sum"
 
 ## Status Bar
 
 - Shows the current sum of selected numbers
-- Displays auto-calculate status with an icon
-  - Check icon: Auto-calculate is enabled
-  - Close icon: Auto-calculate is disabled
+- Displays auto-calculate status:
+  - ✓ Auto: Auto-calculate is enabled
+  - ✕ Auto: Auto-calculate is disabled
+  - Click to toggle the feature
+
+## Settings
+
+- `numberSum.autoCalculate`: Enable/disable automatic calculation of number sums (default: true)
 
 ## Examples
 
@@ -68,6 +67,12 @@ None at the moment.
 
 ## Release Notes
 
+### 0.0.2
+
+- Added auto-calculate toggle in status bar
+- Improved status bar display
+- Added startup activation
+
 ### 0.0.1
 
 Initial release of Number Sum:
@@ -76,6 +81,10 @@ Initial release of Number Sum:
 - Auto-calculate feature
 - Status bar integration
 - Settings support
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Following extension guidelines
 

@@ -58,12 +58,11 @@ export function activate(context: vscode.ExtensionContext) {
     const config = vscode.workspace.getConfiguration("numberSum")
     const isEnabled = config.get("autoCalculate", true)
 
-    autoCalculateStatusItem.text = isEnabled
-      ? "$(check) Auto Calculate"
-      : "$(close) Auto Calculate"
+    autoCalculateStatusItem.text = isEnabled ? "$(check) Auto" : "$(close) Auto"
     autoCalculateStatusItem.tooltip = isEnabled
-      ? "Auto sum calculation is enabled"
-      : "Auto sum calculation is disabled"
+      ? "Auto calculate enabled (Click to disable)"
+      : "Auto calculate disabled (Click to enable)"
+    autoCalculateStatusItem.command = "number-sum.toggleAutoCalculate"
     autoCalculateStatusItem.show()
   }
 
